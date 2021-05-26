@@ -1,9 +1,15 @@
-//Boolean
-//null
-//undefined
-//Number
-//String 
+// + Adição
+// - Subtração
+// * Multiplicação
+// / Divisão
+// % Módulo
+// ++ Incremento
+// -- Decremento
 
-var a= false;
+var a= 30;
+var b= ++a;
 
-console.log(a);
+
+
+
+console.log(b);
