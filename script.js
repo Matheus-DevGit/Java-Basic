@@ -1,16 +1,9 @@
-var a;
+//Boolean
+//null
+//undefined
+//Number
+//String 
 
-var b= "hd";
+var a= false;
 
-a= "Placa";
-
-b= a;
-
-var caixa_Grande;
-
-caixa_Grande= "Fonte"
-
-
-console.log(caixa_Grande);
-
-console.log(b);
+console.log(a);
