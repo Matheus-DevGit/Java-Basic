@@ -1,23 +1,39 @@
-// + Adição
-// - Subtração
-// * Multiplicação
-// / Divisão
-// % Módulo
-// ++ Incremento
-// -- Decremento
+
+// Nome do aluno - nota 1 - nota 2 - média - Aprovado / Reprovado
+
+var nomes = ["Igor", "Jose", "Maria"];
+var notasA = [7.0, 6.5, 9.5];
+var notasB = [8.0, 7.0, 8.5];
 
 
-var idade =  9;
+function media(n1, n2) {
+    return (n1 + n2) / 2
+}
 
-var maior65= idade >= 65;
-var menor10= idade <= 10;
+function passou(media) {
 
-var gratuidade = menor10 || maior65;
+    if (media >= 7) {
+        return "Aprovado";
+    }
+    else {
+        return "Reprovado"
+    }
+}
 
-console.log("idade", idade);
+for (var index in nomes) {
 
-console.log(" Maior que 65 ", maior65);
+    var nota1 = notasA[index];
+    var nota2 = notasB[index];
+    var m = media(nota1, nota2);
 
-console.log(" Menor que 10 ", menor10);
-
-console.log("Tem direito a gratuidade ?", gratuidade)
+    console.log(nomes[index] +
+        " - " +
+        nota1 +
+        " - " +
+        nota2 +
+        " - " +
+        m +
+        " - "+
+        passou(m));
+        
+}
